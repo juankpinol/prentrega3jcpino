@@ -12,7 +12,7 @@
 
     &__container{
 
-    height: 500px;
+    height: 600px;
     background-image: linear-gradient(#000000a9,#00000093), url(../multimedia/img/fondo_carpintero.jpg);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -36,5 +36,10 @@
 
     &__parrafo{
         font-size: mixinfunc.pixeles-rem(18);
+    }
+
+    &__mapa{
+        width: 10%;
+        margin: 20px;
     }
 }
