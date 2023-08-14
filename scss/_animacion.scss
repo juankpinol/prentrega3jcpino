@@ -50,3 +50,11 @@ transform: scale($scale-factor);
 .footer__lista:hover {
     transform: scale($scale-factor);
 }
+
+.grilla__boton{
+    transition: transform $transition-duration ease;
+}
+
+.grilla__boton:hover{
+    transform: scale($scale-factor);
+}
