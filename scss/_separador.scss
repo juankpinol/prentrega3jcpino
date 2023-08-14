@@ -1,15 +1,16 @@
-.separador{
-    height: 100px;
+.separador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.254);
     margin-top: 30px;
     padding: 10px;
-    left: 0;
-    right: 0;
+    position: relative;
+}
 
-        &__h2{
-            color: rgb(0, 0, 0);
-            text-align: center;
-            text-justify: center;
-        }
+.separador__h2 {
+    color: rgb(0, 0, 0);
 }

@@ -60,19 +60,20 @@ body {
 }
 
 .central__container {
-  height: 600px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.662745098), rgba(0, 0, 0, 0.5764705882)), url(../multimedia/img/fondo_carpintero.jpg);
-  margin-top: 20px;
-  margin-bottom: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.662745098), rgba(0, 0, 0, 0.5764705882)), url(../multimedia/img/fondo_carpintero.jpg);
+  margin: 20px auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .central__textos {
-  width: 90%;
+  width: 100%;
+  max-width: 1200px;
   color: #fff;
 }
 .central__titulo {
@@ -83,8 +84,9 @@ body {
   font-size: 1.125rem;
 }
 .central__mapa {
-  width: 10%;
-  margin: 20px;
+  width: 60%;
+  margin: 20px auto;
+  display: block;
 }
 
 .card {
@@ -97,6 +99,15 @@ body {
 .card .img {
   border-radius: 5px;
   border: 1px solid;
+}
+
+.foto__taller {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.foto__taller__foto {
+  width: 300px;
 }
 
 .subrallado {
@@ -174,11 +185,20 @@ body {
 
 .grilla__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 400px 400px 0px 0px;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin: 20px;
-  padding: 10px;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .grilla__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .grilla__container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grilla__item {
@@ -200,21 +220,29 @@ body {
   width: 100px;
   background-color: #bec2ca;
   margin-left: auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.grilla__boton:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .separador {
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.254);
   margin-top: 30px;
   padding: 10px;
-  left: 0;
-  right: 0;
+  position: relative;
 }
+
 .separador__h2 {
   color: rgb(0, 0, 0);
-  text-align: center;
-  text-justify: center;
 }
 
 .formulario form {
@@ -246,6 +274,22 @@ body {
 }
 .formulario form button[type=submit]:hover {
   background-color: #0056b3;
+}
+
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-sticky a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
