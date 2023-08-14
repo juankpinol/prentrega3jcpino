@@ -84,8 +84,8 @@ body {
   font-size: 1.125rem;
 }
 .central__mapa {
-  width: 60%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 10px auto;
   display: block;
 }
 
@@ -278,7 +278,7 @@ body {
 
 .whatsapp-sticky {
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   right: 20px;
   background-color: #25D366;
   padding: 10px 20px;

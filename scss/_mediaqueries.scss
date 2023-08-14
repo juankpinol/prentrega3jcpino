@@ -1,0 +1,27 @@
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-xlarge: 1200px;
+
+/* Estilos para dispositivos móviles pequeños */
+@media (max-width: $breakpoint-small) {
+  // Aquí defines los estilos para dispositivos móviles pequeños
+}
+
+/* Estilos para tablets y dispositivos pequeños */
+@media (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
+  // Aquí defines los estilos para tablets y dispositivos pequeños
+}
+
+/* Estilos para tablets y laptops */
+@media (min-width: $breakpoint-large) and (max-width: $breakpoint-xlarge) {
+  // Aquí defines los estilos para tablets y laptops
+}
+
+/* Estilos para pantallas de escritorio y laptops grandes */
+@media (min-width: $breakpoint-xlarge) {
+  // Aquí defines los estilos para pantallas de escritorio y laptops grandes
+}
+
+/* Resto de tus estilos de CSS */
+/* ... */
