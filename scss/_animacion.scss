@@ -15,12 +15,38 @@
         animation-name: animacion#{$iterador};
 
         @keyframes animacion#{$iterador}{
+            
             100%{
                 transform: translate(50% * $iterador);
             }
-        } 
+         } 
         
-       
-
-        }
     }
+}
+
+$transition-duration: 0.3s;
+$scale-factor: 1.2;
+
+.header__texto {
+    transition: transform $transition-duration ease; 
+}
+
+.header__texto:hover {
+    transform: scale($scale-factor); 
+}
+
+.nav__item {
+    transition: transform $transition-duration ease;
+}
+
+.nav__item:hover {
+transform: scale($scale-factor);
+}
+
+.footer__lista{
+    transition: transform $transition-duration ease;
+}
+
+.footer__lista:hover {
+    transform: scale($scale-factor);
+}

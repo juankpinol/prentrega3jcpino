@@ -1,32 +1,37 @@
 
-.nav{
+.nav {
     background-color: #000;
 
-    &__container{
+    &__container {
         width: 90%;
         height: 100px;
         margin: 10px;
         padding: 10px;
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content: space-between;
         gap: 1rem;
+
+        i {
+            font-size: 25px;
+            margin-right: 10px;
+        }
     }
 
-    &__item{
+    &__item {
         color: rgb(255, 255, 255);
         text-decoration: none;
         font-size: 20px;
+
+        i {
+            font-size: 20px;
+            margin-right: 5px;
+        }
     }
 
-    @media (min-width:764px){
-        &__container{
+    @media (min-width: 764px) {
+        &__container {
             justify-content: flex-end;
         }
     }
-        
-    }
-
-
-
-
+}
